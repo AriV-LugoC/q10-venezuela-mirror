@@ -64,13 +64,17 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				q10: {
-					'blue': '#0072BC',
-					'light-blue': '#58A6D6',
-					'dark-blue': '#005A94',
-					'yellow': '#FFC600',
-					'red': '#FF4438',
-					'green': '#7AC943',
-					'purple': '#9E1F63'
+					// Colores principales
+					'blue': '#106DB0',      // P20-8C (azul principal)
+					'dark-blue': '#004A87', // Versión oscura de P20-8C
+					'light-blue': '#5A9FD8', // Versión clara de P20-8C
+					'purple': '#994878',    // 179-9C (morado/púrpura)
+					
+					// Colores secundarios
+					'green': '#60BD7D',     // 151-C (verde)
+					'orange': '#FF8D3F',    // 14-8C (naranja)
+					'yellow': '#FFCB05',    // 94-8C (amarillo)
+					'red': '#E54B4B',       // 109-8C (rojo)
 				}
 			},
 			borderRadius: {

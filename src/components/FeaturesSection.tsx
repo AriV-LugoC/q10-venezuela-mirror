@@ -30,7 +30,7 @@ const features = [
     description: "Genera informes detallados sobre el rendimiento académico de los estudiantes."
   },
   {
-    icon: <Award className="h-10 w-10 text-q10-light-blue" />,
+    icon: <Award className="h-10 w-10 text-q10-orange" />,
     title: "Reconocimientos",
     description: "Sistema de reconocimientos y logros para motivar el desempeño de los estudiantes."
   }

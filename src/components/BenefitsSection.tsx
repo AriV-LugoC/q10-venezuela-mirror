@@ -35,8 +35,8 @@ const BenefitsSection = () => {
                     <span className="text-3xl font-bold text-q10-purple">+10k</span>
                     <span className="text-gray-600">Profesores</span>
                   </div>
-                  <div className="bg-q10-red/10 rounded-lg p-4 flex flex-col items-center justify-center text-center">
-                    <span className="text-3xl font-bold text-q10-red">+40k</span>
+                  <div className="bg-q10-orange/10 rounded-lg p-4 flex flex-col items-center justify-center text-center">
+                    <span className="text-3xl font-bold text-q10-orange">+40k</span>
                     <span className="text-gray-600">Padres</span>
                   </div>
                 </div>

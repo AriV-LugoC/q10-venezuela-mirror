@@ -5,7 +5,7 @@ import { BookOpen, Calendar, MessageSquare, Users, FileText, Award } from "lucid
 
 const features = [
   {
-    icon: <BookOpen className="h-10 w-10 text-q10-blue" />,
+    icon: <BookOpen className="h-10 w-10 text-q10-orange" />,
     title: "Contenido Académico",
     description: "Gestiona fácilmente el contenido académico, tareas y material de estudio para tus estudiantes."
   },
@@ -30,7 +30,7 @@ const features = [
     description: "Genera informes detallados sobre el rendimiento académico de los estudiantes."
   },
   {
-    icon: <Award className="h-10 w-10 text-q10-orange" />,
+    icon: <Award className="h-10 w-10 text-q10-blue" />,
     title: "Reconocimientos",
     description: "Sistema de reconocimientos y logros para motivar el desempeño de los estudiantes."
   }
@@ -42,7 +42,7 @@ const FeaturesSection = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Funcionalidades <span className="text-q10-blue">principales</span>
+            Funcionalidades <span className="text-q10-orange">principales</span>
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
             Q10 ofrece todas las herramientas necesarias para la gestión educativa moderna y eficiente

@@ -31,7 +31,7 @@ const TestimonialsSection = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Lo que dicen nuestros <span className="text-q10-blue">usuarios</span>
+            Lo que dicen nuestros <span className="text-q10-orange">usuarios</span>
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
             Miles de instituciones educativas ya confían en Q10 para su gestión académica diaria
@@ -42,11 +42,11 @@ const TestimonialsSection = () => {
           {testimonials.map((testimonial, index) => (
             <Card key={index} className="border border-gray-100 shadow-sm hover:shadow-md transition-shadow duration-300 h-full">
               <CardContent className="p-6 flex flex-col h-full">
-                <Quote className="h-10 w-10 text-q10-blue/20 mb-4" />
+                <Quote className="h-10 w-10 text-q10-orange/20 mb-4" />
                 <p className="text-gray-700 italic mb-6 flex-grow">"{testimonial.quote}"</p>
                 <div className="flex items-center mt-auto">
                   <Avatar className="h-12 w-12 mr-4">
-                    <AvatarFallback className="bg-q10-blue/10 text-q10-blue">
+                    <AvatarFallback className="bg-q10-orange/10 text-q10-orange">
                       {testimonial.author.split(' ').map(name => name[0]).join('')}
                     </AvatarFallback>
                   </Avatar>

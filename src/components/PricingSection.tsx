@@ -60,7 +60,7 @@ const PricingSection = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Planes <span className="text-q10-blue">flexibles</span> para cada institución
+            Planes <span className="text-q10-orange">flexibles</span> para cada institución
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
             Ofrecemos planes que se adaptan al tamaño y necesidades de cada institución educativa
@@ -71,9 +71,9 @@ const PricingSection = () => {
           {plans.map((plan, index) => (
             <Card 
               key={index} 
-              className={`border ${plan.highlighted ? 'border-q10-blue ring-2 ring-q10-blue/20' : 'border-gray-200'} shadow-lg hover:shadow-xl transition-shadow duration-300 h-full flex flex-col`}
+              className={`border ${plan.highlighted ? 'border-q10-orange ring-2 ring-q10-orange/20' : 'border-gray-200'} shadow-lg hover:shadow-xl transition-shadow duration-300 h-full flex flex-col`}
             >
-              <CardHeader className={`pb-2 ${plan.highlighted ? 'bg-q10-blue/5' : ''}`}>
+              <CardHeader className={`pb-2 ${plan.highlighted ? 'bg-q10-orange/5' : ''}`}>
                 <CardTitle className="text-2xl font-bold">{plan.name}</CardTitle>
                 <div className="mt-4">
                   <span className="text-3xl font-bold">{plan.price}</span>
@@ -85,7 +85,7 @@ const PricingSection = () => {
                 <ul className="space-y-3 mt-4">
                   {plan.features.map((feature, i) => (
                     <li key={i} className="flex items-start">
-                      <CheckCircle className={`h-5 w-5 ${plan.highlighted ? 'text-q10-blue' : 'text-q10-green'} mr-2 flex-shrink-0 mt-0.5`} />
+                      <CheckCircle className={`h-5 w-5 ${plan.highlighted ? 'text-q10-orange' : 'text-q10-green'} mr-2 flex-shrink-0 mt-0.5`} />
                       <span className="text-gray-700 text-sm">{feature}</span>
                     </li>
                   ))}
@@ -93,7 +93,7 @@ const PricingSection = () => {
               </CardContent>
               <CardFooter>
                 <Button 
-                  className={`w-full ${plan.highlighted ? 'bg-q10-blue hover:bg-q10-dark-blue' : 'bg-gray-800 hover:bg-gray-700'} text-white`}
+                  className={`w-full ${plan.highlighted ? 'bg-q10-orange hover:bg-q10-orange/90' : 'bg-gray-800 hover:bg-gray-700'} text-white`}
                 >
                   {plan.buttonText}
                 </Button>
@@ -104,7 +104,7 @@ const PricingSection = () => {
         
         <div className="mt-12 text-center">
           <p className="text-gray-600">¿Necesitas un plan personalizado para tu institución?</p>
-          <a href="#contacto" className="text-q10-blue hover:underline font-medium">Contáctanos para más información</a>
+          <a href="#contacto" className="text-q10-orange hover:underline font-medium">Contáctanos para más información</a>
         </div>
       </div>
     </section>

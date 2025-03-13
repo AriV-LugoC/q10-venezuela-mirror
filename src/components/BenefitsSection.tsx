@@ -20,11 +20,11 @@ const BenefitsSection = () => {
           <div className="lg:w-1/2">
             <div className="relative">
               <div className="absolute -top-6 -left-6 w-32 h-32 bg-q10-yellow rounded-full opacity-20"></div>
-              <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-q10-blue rounded-full opacity-20"></div>
+              <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-q10-orange rounded-full opacity-20"></div>
               <div className="relative bg-white p-6 rounded-lg shadow-lg">
                 <div className="grid grid-cols-2 gap-4">
-                  <div className="bg-q10-blue/10 rounded-lg p-4 flex flex-col items-center justify-center text-center">
-                    <span className="text-3xl font-bold text-q10-blue">+500</span>
+                  <div className="bg-q10-orange/10 rounded-lg p-4 flex flex-col items-center justify-center text-center">
+                    <span className="text-3xl font-bold text-q10-orange">+500</span>
                     <span className="text-gray-600">Instituciones</span>
                   </div>
                   <div className="bg-q10-green/10 rounded-lg p-4 flex flex-col items-center justify-center text-center">
@@ -46,7 +46,7 @@ const BenefitsSection = () => {
           
           <div className="lg:w-1/2 space-y-6">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
-              Beneficios de usar <span className="text-q10-blue">Q10</span>
+              Beneficios de usar <span className="text-q10-orange">Q10</span>
             </h2>
             <p className="text-lg text-gray-600">
               Nuestra plataforma está diseñada para hacer más eficiente la gestión educativa, ahorrando tiempo y recursos a todos los involucrados.
@@ -61,7 +61,7 @@ const BenefitsSection = () => {
               ))}
             </ul>
             
-            <Button className="bg-q10-blue hover:bg-q10-dark-blue text-white">
+            <Button className="bg-q10-orange hover:bg-q10-orange/90 text-white">
               Solicitar Información
             </Button>
           </div>

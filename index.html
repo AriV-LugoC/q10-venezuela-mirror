@@ -1,19 +1,550 @@
 
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Q10 Venezuela - Comunidad educativa digital</title>
-    <meta name="description" content="Q10 Venezuela - Plataforma educativa que conecta colegios, profesores, padres y estudiantes" />
-    <meta name="author" content="Q10 Venezuela" />
-    <meta property="og:image" content="/og-image.png" />
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Q10 Venezuela - Comunidad educativa digital</title>
+  <meta name="description" content="Q10 Venezuela - Plataforma educativa que conecta colegios, profesores, padres y estudiantes">
+  <meta name="author" content="Q10 Venezuela">
+  <meta property="og:image" content="/og-image.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="navbar-content">
+        <div class="logo">
+          <a href="/">
+            <span class="logo-q10">Q10</span>
+            <span class="logo-venezuela">Venezuela</span>
+          </a>
+        </div>
+        
+        <!-- Desktop menu -->
+        <div class="desktop-menu">
+          <a href="#funcionalidades" class="nav-link">Funcionalidades</a>
+          <a href="#beneficios" class="nav-link">Beneficios</a>
+          <a href="#planes" class="nav-link">Planes</a>
+          <a href="#contacto" class="nav-link">Contacto</a>
+          <button class="btn btn-primary">Iniciar Sesión</button>
+        </div>
+        
+        <!-- Mobile menu button -->
+        <div class="mobile-menu-button">
+          <button id="menu-toggle">
+            <span class="menu-icon"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Mobile menu -->
+    <div class="mobile-menu" id="mobile-menu">
+      <div class="mobile-menu-content">
+        <a href="#funcionalidades" class="nav-link">Funcionalidades</a>
+        <a href="#beneficios" class="nav-link">Beneficios</a>
+        <a href="#planes" class="nav-link">Planes</a>
+        <a href="#contacto" class="nav-link">Contacto</a>
+        <div class="mobile-button-container">
+          <button class="btn btn-primary btn-full">Iniciar Sesión</button>
+        </div>
+      </div>
+    </div>
+  </nav>
 
-  <body>
-    <div id="root"></div>
-    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
-    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1>Conectando a toda la <span class="text-orange">comunidad educativa</span></h1>
+            <p>Q10 es la plataforma educativa que integra a colegios, profesores, padres y estudiantes en un solo lugar.</p>
+            <div class="button-group">
+              <button class="btn btn-primary">Solicitar Demo</button>
+              <button class="btn btn-outline">Conocer Más</button>
+            </div>
+          </div>
+          <div class="hero-image">
+            <div class="dashboard-preview">
+              <div class="dashboard-inner">
+                <div class="dashboard-header"></div>
+                <div class="dashboard-content">
+                  <div class="dashboard-row"></div>
+                  <div class="dashboard-row"></div>
+                  <div class="dashboard-row"></div>
+                </div>
+                <div class="dashboard-grid">
+                  <div class="dashboard-grid-item"></div>
+                  <div class="dashboard-grid-item"></div>
+                </div>
+              </div>
+            </div>
+            <div class="badge">
+              <span>Q10</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="funcionalidades" class="features">
+      <div class="container">
+        <div class="section-header">
+          <h2>Funcionalidades <span class="text-orange">principales</span></h2>
+          <p>Q10 ofrece todas las herramientas necesarias para la gestión educativa moderna y eficiente</p>
+        </div>
+        
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon icon-orange">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+            </div>
+            <h3>Contenido Académico</h3>
+            <p>Gestiona fácilmente el contenido académico, tareas y material de estudio para tus estudiantes.</p>
+          </div>
+          
+          <div class="feature-card">
+            <div class="feature-icon icon-yellow">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+            </div>
+            <h3>Calendario Escolar</h3>
+            <p>Organiza eventos, exámenes y fechas importantes del año escolar de manera intuitiva.</p>
+          </div>
+          
+          <div class="feature-card">
+            <div class="feature-icon icon-green">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+            </div>
+            <h3>Comunicación Efectiva</h3>
+            <p>Mantén comunicación directa entre profesores, estudiantes y padres de familia.</p>
+          </div>
+          
+          <div class="feature-card">
+            <div class="feature-icon icon-purple">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+            </div>
+            <h3>Gestión de Usuarios</h3>
+            <p>Administra perfiles de estudiantes, profesores y padres con distintos niveles de acceso.</p>
+          </div>
+          
+          <div class="feature-card">
+            <div class="feature-icon icon-red">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+            </div>
+            <h3>Reportes y Evaluaciones</h3>
+            <p>Genera informes detallados sobre el rendimiento académico de los estudiantes.</p>
+          </div>
+          
+          <div class="feature-card">
+            <div class="feature-icon icon-blue">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+            </div>
+            <h3>Reconocimientos</h3>
+            <p>Sistema de reconocimientos y logros para motivar el desempeño de los estudiantes.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="beneficios" class="benefits">
+      <div class="container">
+        <div class="benefits-content">
+          <div class="benefits-chart">
+            <div class="stats-container">
+              <div class="stats-grid">
+                <div class="stat-card orange-light">
+                  <span class="stat-number">+500</span>
+                  <span class="stat-label">Instituciones</span>
+                </div>
+                <div class="stat-card green-light">
+                  <span class="stat-number">+50k</span>
+                  <span class="stat-label">Estudiantes</span>
+                </div>
+                <div class="stat-card purple-light">
+                  <span class="stat-number">+10k</span>
+                  <span class="stat-label">Profesores</span>
+                </div>
+                <div class="stat-card orange-light">
+                  <span class="stat-number">+40k</span>
+                  <span class="stat-label">Padres</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="benefits-text">
+            <h2>Beneficios de usar <span class="text-orange">Q10</span></h2>
+            <p>Nuestra plataforma está diseñada para hacer más eficiente la gestión educativa, ahorrando tiempo y recursos a todos los involucrados.</p>
+            
+            <ul class="benefits-list">
+              <li>
+                <span class="check-icon">✓</span>
+                <span>Ahorra tiempo en procesos administrativos</span>
+              </li>
+              <li>
+                <span class="check-icon">✓</span>
+                <span>Mejora la comunicación entre todos los actores educativos</span>
+              </li>
+              <li>
+                <span class="check-icon">✓</span>
+                <span>Reduce el uso de papel y contribuye al medio ambiente</span>
+              </li>
+              <li>
+                <span class="check-icon">✓</span>
+                <span>Acceso desde cualquier dispositivo y lugar</span>
+              </li>
+              <li>
+                <span class="check-icon">✓</span>
+                <span>Soporte técnico especializado para instituciones educativas</span>
+              </li>
+              <li>
+                <span class="check-icon">✓</span>
+                <span>Actualizaciones constantes con nuevas funcionalidades</span>
+              </li>
+            </ul>
+            
+            <button class="btn btn-primary">Solicitar Información</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="planes" class="pricing">
+      <div class="container">
+        <div class="section-header">
+          <h2>Planes <span class="text-orange">flexibles</span> para cada institución</h2>
+          <p>Ofrecemos planes que se adaptan al tamaño y necesidades de cada institución educativa</p>
+        </div>
+        
+        <div class="pricing-cards">
+          <div class="pricing-card">
+            <div class="pricing-header">
+              <h3>Básico</h3>
+              <div class="pricing-price">
+                <span class="price">$30</span>
+                <span class="period">por estudiante / mes</span>
+              </div>
+              <p>Ideal para pequeñas instituciones educativas</p>
+            </div>
+            <div class="pricing-features">
+              <ul>
+                <li><span class="check-icon">✓</span> Gestión académica básica</li>
+                <li><span class="check-icon">✓</span> Hasta 200 estudiantes</li>
+                <li><span class="check-icon">✓</span> Comunicación básica</li>
+                <li><span class="check-icon">✓</span> Reportes mensuales</li>
+                <li><span class="check-icon">✓</span> Soporte por correo electrónico</li>
+              </ul>
+            </div>
+            <div class="pricing-footer">
+              <button class="btn btn-dark">Empezar Ahora</button>
+            </div>
+          </div>
+
+          <div class="pricing-card highlighted">
+            <div class="pricing-header">
+              <h3>Premium</h3>
+              <div class="pricing-price">
+                <span class="price">$45</span>
+                <span class="period">por estudiante / mes</span>
+              </div>
+              <p>Solución completa para instituciones medianas</p>
+            </div>
+            <div class="pricing-features">
+              <ul>
+                <li><span class="check-icon">✓</span> Todas las características de Básico</li>
+                <li><span class="check-icon">✓</span> Hasta 1000 estudiantes</li>
+                <li><span class="check-icon">✓</span> Comunicación avanzada</li>
+                <li><span class="check-icon">✓</span> Reportes semanales personalizados</li>
+                <li><span class="check-icon">✓</span> Soporte telefónico prioritario</li>
+                <li><span class="check-icon">✓</span> Módulo de calificaciones avanzado</li>
+              </ul>
+            </div>
+            <div class="pricing-footer">
+              <button class="btn btn-primary">Elegir Premium</button>
+            </div>
+          </div>
+
+          <div class="pricing-card">
+            <div class="pricing-header">
+              <h3>Enterprise</h3>
+              <div class="pricing-price">
+                <span class="price">Personalizado</span>
+                <span class="period">contáctanos para más información</span>
+              </div>
+              <p>Para grandes instituciones con necesidades específicas</p>
+            </div>
+            <div class="pricing-features">
+              <ul>
+                <li><span class="check-icon">✓</span> Todas las características de Premium</li>
+                <li><span class="check-icon">✓</span> Estudiantes ilimitados</li>
+                <li><span class="check-icon">✓</span> API personalizada</li>
+                <li><span class="check-icon">✓</span> Integración con sistemas existentes</li>
+                <li><span class="check-icon">✓</span> Soporte 24/7</li>
+                <li><span class="check-icon">✓</span> Capacitación personalizada</li>
+              </ul>
+            </div>
+            <div class="pricing-footer">
+              <button class="btn btn-dark">Contactar Ventas</button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="pricing-info">
+          <p>¿Necesitas un plan personalizado para tu institución?</p>
+          <a href="#contacto" class="link-orange">Contáctanos para más información</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+      <div class="container">
+        <div class="section-header">
+          <h2>Lo que dicen nuestros <span class="text-orange">usuarios</span></h2>
+          <p>Miles de instituciones educativas ya confían en Q10 para su gestión académica diaria</p>
+        </div>
+        
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <div class="quote-icon">"</div>
+            <p class="testimonial-text">Q10 ha transformado completamente la forma en que gestionamos nuestra institución. Los procesos que antes tomaban días ahora se realizan en minutos.</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">
+                <div class="avatar-text">MG</div>
+              </div>
+              <div class="author-info">
+                <p class="author-name">María González</p>
+                <p class="author-role">Directora Académica, Colegio Santa María</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="quote-icon">"</div>
+            <p class="testimonial-text">Como profesor, puedo decir que Q10 ha facilitado enormemente mi trabajo diario. Puedo comunicarme fácilmente con padres y estudiantes, y gestionar mis clases de manera más eficiente.</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">
+                <div class="avatar-text">CR</div>
+              </div>
+              <div class="author-info">
+                <p class="author-name">Carlos Rodríguez</p>
+                <p class="author-role">Profesor de Matemáticas, Liceo Internacional</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="quote-icon">"</div>
+            <p class="testimonial-text">La comunicación con los profesores y la institución ha mejorado significativamente desde que implementamos Q10. Como padre, me siento más conectado con la educación de mis hijos.</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">
+                <div class="avatar-text">AM</div>
+              </div>
+              <div class="author-info">
+                <p class="author-name">Ana Martínez</p>
+                <p class="author-role">Madre de Familia, Instituto Moderno</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="contact">
+      <div class="container">
+        <div class="section-header">
+          <h2>¿Listo para <span class="text-blue">comenzar</span>?</h2>
+          <p>Ponte en contacto con nuestro equipo y descubre cómo Q10 puede transformar la gestión educativa en tu institución</p>
+        </div>
+        
+        <div class="contact-content">
+          <div class="contact-form">
+            <form>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name">Nombre completo</label>
+                  <input type="text" id="name" placeholder="Tu nombre">
+                </div>
+                <div class="form-group">
+                  <label for="institution">Institución</label>
+                  <input type="text" id="institution" placeholder="Nombre de tu institución">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="email">Correo electrónico</label>
+                  <input type="email" id="email" placeholder="tu@email.com">
+                </div>
+                <div class="form-group">
+                  <label for="phone">Teléfono</label>
+                  <input type="text" id="phone" placeholder="+58 XXX XXXXXXX">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="message">Mensaje</label>
+                <textarea id="message" placeholder="¿Cómo podemos ayudarte?" rows="4"></textarea>
+              </div>
+              <button type="submit" class="btn btn-blue">Enviar Mensaje</button>
+            </form>
+          </div>
+          
+          <div class="contact-info">
+            <div>
+              <h3>Información de contacto</h3>
+              <p>Estamos disponibles para responder cualquier pregunta que tengas sobre nuestra plataforma educativa Q10.</p>
+            </div>
+            
+            <div class="contact-details">
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                </div>
+                <div>
+                  <h4>Teléfono</h4>
+                  <p>+58 (212) 555-1234</p>
+                </div>
+              </div>
+              
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                </div>
+                <div>
+                  <h4>Correo Electrónico</h4>
+                  <p>info@q10venezuela.com</p>
+                </div>
+              </div>
+              
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                </div>
+                <div>
+                  <h4>Oficina Principal</h4>
+                  <p>
+                    Av. Francisco de Miranda, Torre Parque Cristal,<br>
+                    Piso 15, Oficina 15-A, Caracas, Venezuela
+                  </p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="office-hours">
+              <h3>Horario de Atención</h3>
+              <div>
+                <p>Lunes a Viernes: 8:00 AM - 6:00 PM</p>
+                <p>Sábado: 9:00 AM - 1:00 PM</p>
+                <p>Domingo: Cerrado</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-column">
+          <div class="footer-logo">
+            <a href="/">
+              <span class="logo-q10-footer">Q10</span>
+              <span class="logo-venezuela-footer">Venezuela</span>
+            </a>
+          </div>
+          <p>Plataforma educativa integral que conecta a toda la comunidad académica en un solo lugar.</p>
+          <div class="social-icons">
+            <a href="#" class="social-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+            </a>
+            <a href="#" class="social-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+            </a>
+            <a href="#" class="social-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+            <a href="#" class="social-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </a>
+          </div>
+        </div>
+        
+        <div class="footer-column">
+          <h3>Enlaces Rápidos</h3>
+          <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#funcionalidades">Funcionalidades</a></li>
+            <li><a href="#beneficios">Beneficios</a></li>
+            <li><a href="#planes">Planes</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h3>Recursos</h3>
+          <ul>
+            <li><a href="#">Centro de Ayuda</a></li>
+            <li><a href="#">Tutoriales</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Preguntas Frecuentes</a></li>
+            <li><a href="#">Documentación</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h3>Legal</h3>
+          <ul>
+            <li><a href="#">Términos y Condiciones</a></li>
+            <li><a href="#">Política de Privacidad</a></li>
+            <li><a href="#">Política de Cookies</a></li>
+            <li><a href="#">Protección de Datos</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> Q10 Venezuela. Todos los derechos reservados.</p>
+        <div class="footer-links">
+          <a href="#">Términos</a>
+          <a href="#">Privacidad</a>
+          <a href="#">Cookies</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Menu toggle functionality
+    document.addEventListener('DOMContentLoaded', function() {
+      const menuToggle = document.getElementById('menu-toggle');
+      const mobileMenu = document.getElementById('mobile-menu');
+      
+      menuToggle.addEventListener('click', function() {
+        mobileMenu.classList.toggle('show');
+        menuToggle.classList.toggle('active');
+      });
+
+      // Set current year in footer
+      document.getElementById('year').textContent = new Date().getFullYear();
+      
+      // Close mobile menu when clicking on a link
+      const mobileLinks = document.querySelectorAll('.mobile-menu a');
+      mobileLinks.forEach(link => {
+        link.addEventListener('click', function() {
+          mobileMenu.classList.remove('show');
+          menuToggle.classList.remove('active');
+        });
+      });
+    });
+  </script>
+</body>
 </html>
